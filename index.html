@@ -8,20 +8,38 @@
       
       <style>
         html {
-            scroll-behaviour: smooth;
+          scroll-behaviour: smooth;
         }
         .properties {
-            color: blue;
+          color: blue;
+          
+        }
+
+        #silver-drop-img {
+          float: right;
         }
 
         body {
-            background-color: grey;
+          background-color: grey;
+        }
+
+        @keyframes spin {
+          from {
+            transform:rotate(0deg);
+          }
+          to {
+            transform:rotate(360deg);
+          }
         }
       </style>
     </head>
 
     <body>
       <div>
+
+        <img src="https://olivery4.github.io/mockumentary/silver-drop.png" id ="silver-drop-img" animation-name="spin"
+          animation-duration="1000ms">
+        
         <h2 class = "properties">Mercury properties</h2>
         <ol class = "properties">
           <li>Sliverly- white</li>
