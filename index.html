@@ -10,6 +10,11 @@
         html {
           scroll-behaviour: smooth;
         }
+
+        .img {
+          overflow: hidden;
+        }
+        
         .properties {
           color: blue;
         }
@@ -46,25 +51,26 @@
           animation-timing-function: linear; 
         }
 
-        body {
-          background-color: grey;
-        }
-
         @keyframes spin {
           from {
             transform:rotate(0deg);
           }
           to {
             transform:rotate(360deg);
+
+          body {
+            background-color: grey;
+          }
         }
       </style>
     </head>
 
     <body>
-      <div>
-
+      <div class="img">
         <img src="https://olivery4.github.io/mockumentary/silver-drop.png" id ="silverDropImg">
-        
+      </div>
+      
+      <div>
         <h2 class="properties">Mercury properties</h2>
         
         <ol class="propertiesList">
