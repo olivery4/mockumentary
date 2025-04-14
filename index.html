@@ -11,10 +11,15 @@
 
     <body>
       <div class="tabs">
-        <button class="homeButton">home</button>
+        <button onclick="document.getELementById('mercuryInfo').style.display='block'; document.getElementById('test1').style.display='none';" class="homeButton">home</button>
+        <button onclick="document.getELementById('mercuryInfo').style.display='none'; document.getElementById('test1').style.display='block';" class="test">test</button>
       </div>
 
-      <div class="mercuryInfo">
+      <div id="test1" style="display:none">
+        <h1>HELLO!</h1>
+      </div>
+
+      <div id="mercuryInfo">
         <img src="https://olivery4.github.io/mockumentary/silver-drop.png" id="silverDropImg">
         
         <div>
@@ -63,10 +68,6 @@
             <li>Industrial processes (which releases significant amounts of mercury)</li>
           </ul>
         </div>
-      </div>
-
-      <div class="test1" style="display:none">
-        <h1>HELLO!</h1>
       </div>
     </body>
   </html>
