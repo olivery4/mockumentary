@@ -14,7 +14,7 @@ body {
   margin-bottom: 50px;
 }
 
-#homeButton {
+.tabButtons {
   border-radius: 0;
   border-width: 1px;
   padding: 0px 20px;
