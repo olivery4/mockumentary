@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-.tabs {
+#tabs {
   height: 30px;
   width: 100%;
   background-color: #D3D3D3;
@@ -21,29 +21,29 @@ body {
   height: 100%;
 }
 
-.properties {
+#properties {
   color: blue;
 }
 
-.propertiesList {
-  color: blue;
-  margin-bottom: 50px;
-}
-
-.uses {
-  color: blue;
-}
-
-.usesList {
+#propertiesList {
   color: blue;
   margin-bottom: 50px;
 }
 
-.mercuryLocations {
+#uses {
   color: blue;
 }
 
-.locationsList {
+#usesList {
+  color: blue;
+  margin-bottom: 50px;
+}
+
+#mercuryLocations {
+  color: blue;
+}
+
+#locationsList {
   color: blue;
   margin-bottom: 50px;
 }
