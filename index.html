@@ -10,9 +10,9 @@
     </head>
 
     <body>
-      <div class="tabs">
-        <button onclick="document.getELementById('mercuryInfo').style.display='block'; document.getElementById('test1').style.display='none';" class="homeButton">home</button>
-        <button onclick="document.getELementById('mercuryInfo').style.display='none'; document.getElementById('test1').style.display='block';" class="test">test</button>
+      <div id="tabs">
+        <button onclick="document.getELementById('mercuryInfo').style.display='block'; document.getElementById('test1').style.display='none';" id="homeButton">home</button>
+        <button onclick="document.getELementById('mercuryInfo').style.display='none'; document.getElementById('test1').style.display='block';" id="test">test</button>
       </div>
 
       <div id="test1" style="display:none">
@@ -23,18 +23,18 @@
         <img src="https://olivery4.github.io/mockumentary/silver-drop.png" id="silverDropImg">
         
         <div>
-          <h2 class="properties">Mercury properties</h2>
+          <h2 id="properties">Mercury properties</h2>
           
-          <ol class="propertiesList">
+          <ol id="propertiesList">
             <li>Slivery-white</li>
             <li>Liquid metal</li>
           </ol>
         </div>
   
         <div>
-          <h2 class="uses">Mercury Uses</h2>
+          <h2 id="uses">Mercury Uses</h2>
   
-          <ol class="usesList">
+          <ol id="usesList">
             <li>Scientific Instruments</li>
             <li>Electrical appliances</li>
             <li>
@@ -52,9 +52,9 @@
         </div>
   
         <div>
-          <h2 class="mercuryLocations">Where to find mercury</h2>
+          <h2 id="mercuryLocations">Where to find mercury</h2>
   
-          <ul class="locationsList">
+          <ul id="locationsList">
             <li>Rocks and soil</li>
             <li>
               Can be released through natural means:
