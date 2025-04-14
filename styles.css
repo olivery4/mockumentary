@@ -7,6 +7,12 @@ body {
   overflow-x: hidden
 }
 
+#tabs {
+  height: 30px;
+  width: 100%;
+  background-color: #D3D3D3;
+}
+
 .properties {
   color: blue;
 }
