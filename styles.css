@@ -14,6 +14,10 @@ body {
   margin-bottom: 50px;
 }
 
+.homeButton {
+  height: 100%;
+}
+
 .properties {
   color: blue;
 }
