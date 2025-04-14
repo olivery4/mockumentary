@@ -16,7 +16,8 @@ body {
 
 .homeButton {
   border-radius: 0;
-  padding: 3px 5px;
+  border-width: 1px;
+  padding: 0px 20px;
   height: 100%;
 }
 
