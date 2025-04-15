@@ -22,6 +22,7 @@ body {
   transition: 500ms linear;
   background-color: transparent;
   border: none;
+  margin: 0px;
   display: inline-block;
 }
 
