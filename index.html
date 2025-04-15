@@ -1,73 +1,93 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mockumentary</title>
 
-      <title>Mockumentary</title>
+  <link rel="icon" type="image/png" href="https://olivery4.github.io/mockumentary/favicon.png">
+  <link rel="stylesheet" href="https://olivery4.github.io/mockumentary/styles.css">
+</head>
 
-      <link rel="icon" type="image/png" href="https://olivery4.github.io/mockumentary/favicon.png">
-      
-      <link rel="stylesheet" href="https://olivery4.github.io/mockumentary/styles.css">
-    </head>
+<body>
+  <div id="tabs">
+    <button 
+      onclick="toggleTab('home')" 
+      class="tabButtons" 
+      aria-label="Go to Home"
+    >Home</button>
+    <button 
+      onclick="toggleTab('mercuryInfo')" 
+      class="tabButtons" 
+      aria-label="Learn about Mercury"
+    >Mercury Info</button>
+  </div>
 
-    <body>
-      <div id="tabs">
-        <button onclick="document.getElementById('mercuryInfo').style.display='none'; document.getElementById('test1').style.display='block';" class="tabButtons">home</button>
-        <button onclick="document.getElementById('mercuryInfo').style.display='block'; document.getElementById('test1').style.display='none';" class="tabButtons">test</button>
-      </div>
+  <div id="home" class="tabContent">
+    <h1>HELLO!</h1>
+  </div>
 
-      <div id="home">
-        <h1>HELLO!</h1>
-      </div>
+  <div id="mercuryInfo" class="tabContent" style="display: none;">
+    <img 
+      src="https://olivery4.github.io/mockumentary/silver-drop.png" 
+      id="silverDropImg" 
+      alt="Silver Mercury Drop"
+    >
 
-      <div id="mercuryInfo" style="display: none;">
-        <img src="https://olivery4.github.io/mockumentary/silver-drop.png" id="silverDropImg">
-        
-        <div>
-          <h2 id="properties">Mercury properties</h2>
-          
-          <ol id="propertiesList">
-            <li>Slivery-white</li>
-            <li>Liquid metal</li>
-          </ol>
-        </div>
-  
-        <div>
-          <h2 id="uses">Mercury Uses</h2>
-  
-          <ol id="usesList">
-            <li>Scientific Instruments</li>
-            <li>Electrical appliances</li>
-            <li>
-              Chemical industry
-              <ul>
-                <li>Used as catalyst in various chemical processes</li>
-              </ul>
-            </li>
-            <li>Used in dental fillings</li>
-            <li>Pesticides</li>
-            <li>Anti-fouling paint</li>
-            <li>Batteries</li>
-            <li>Skin-whitening</li>
-          </ol>
-        </div>
-  
-        <div>
-          <h2 id="mercuryLocations">Where to find mercury</h2>
-  
-          <ul id="locationsList">
-            <li>Rocks and soil</li>
-            <li>
-              Can be released through natural means:
-              <ul>
-                <li>Volcanoes</li>
-                <li>Hot springs near mercury ore</li>
-              </ul>
-            </li>
-            <li>Mining</li>
-            <li>Fossil fuels</li>
-            <li>Industrial processes (which releases significant amounts of mercury)</li>
+    <div>
+      <h2>Mercury Properties</h2>
+      <ol>
+        <li>Silvery-white</li>
+        <li>Liquid metal</li>
+      </ol>
+    </div>
+
+    <div>
+      <h2>Mercury Uses</h2>
+      <ol>
+        <li>Scientific Instruments</li>
+        <li>Electrical appliances</li>
+        <li>
+          Chemical industry
+          <ul>
+            <li>Used as catalyst in various chemical processes</li>
           </ul>
-        </div>
-      </div>
-    </body>
-  </html>
+        </li>
+        <li>Dental fillings</li>
+        <li>Pesticides</li>
+        <li>Anti-fouling paint</li>
+        <li>Batteries</li>
+        <li>Skin-whitening</li>
+      </ol>
+    </div>
+
+    <div>
+      <h2>Where to Find Mercury</h2>
+      <ul>
+        <li>Rocks and soil</li>
+        <li>
+          Can be released through natural means:
+          <ul>
+            <li>Volcanoes</li>
+            <li>Hot springs near mercury ore</li>
+          </ul>
+        </li>
+        <li>Mining</li>
+        <li>Fossil fuels</li>
+        <li>Industrial processes (which release significant amounts of mercury)</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleTab(tabName) {
+      const contents = document.querySelectorAll('.tabContent');
+      contents.forEach(content => {
+        content.style.display = 'none';
+      });
+
+      document.getElementById(tabName).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
