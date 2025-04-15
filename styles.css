@@ -24,7 +24,9 @@ body {
 
 .tabButtons:hover {
   background-color: black;
-  color: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  background-image: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 #properties {
