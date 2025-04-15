@@ -40,20 +40,11 @@ body {
   margin-bottom: 50px;
 }
 
-#uses {
+.blue {
   color: blue;
 }
 
-#usesList {
-  color: blue;
-  margin-bottom: 50px;
-}
-
-#mercuryLocations {
-  color: blue;
-}
-
-#locationsList {
+.blueMargin {
   color: blue;
   margin-bottom: 50px;
 }
