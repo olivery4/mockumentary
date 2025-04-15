@@ -19,6 +19,13 @@ body {
   border-width: 1px;
   padding: 0px 20px;
   height: 100%;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  background-clip: text;
+}
+
+.tabButtons:hover {
+  color: transparent;
+  transition: 500ms linear
 }
 
 #properties {
