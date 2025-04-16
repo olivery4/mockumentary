@@ -57,7 +57,7 @@ footer {
   bottom: 0px;
 }
 
-#closeFooter {
+.closeFooter {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -72,6 +72,10 @@ footer {
   background-color: #ADD8E6;
   border: none;
   border-left: 5px solid blue;
+}
+
+#yes {
+  font-size: 30px;
 }
 
 @keyframes spin {
