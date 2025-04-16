@@ -57,6 +57,16 @@ footer {
   bottom: 0px;
 }
 
+#closeFooter {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 #footerDiv {
   padding: 5px;
   background-color: #ADD8E6;
