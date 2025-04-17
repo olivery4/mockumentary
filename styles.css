@@ -55,6 +55,7 @@ body {
 footer {
   position: fixed;
   bottom: 0px;
+  width: 100%;
 }
 
 .closeFooter {
@@ -72,10 +73,11 @@ footer {
   background-color: #ADD8E6;
   border: none;
   border-left: 5px solid blue;
+  width: 100%;
 }
 
 #yes {
-  font-size: 30px;
+  font-size: 16px;
 }
 
 #newtonImg {
