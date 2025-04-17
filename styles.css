@@ -78,6 +78,10 @@ footer {
   font-size: 30px;
 }
 
+#newtonImg {
+  float: left;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
