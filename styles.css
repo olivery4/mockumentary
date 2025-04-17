@@ -53,7 +53,7 @@ body {
 }
 
 footer {
-  position: sticky;
+  position: fixed;
   bottom: 0px;
 }
 
